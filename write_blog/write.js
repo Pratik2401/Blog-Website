@@ -19,6 +19,20 @@ users = JSON.parse(users);
 let active = localStorage.getItem("login");
 active = JSON.parse(active);
 if (active !== null) {
+      //user name in heading
+let users_1=localStorage.getItem("users")
+let log=localStorage.getItem("login")
+users_1=JSON.parse(users_1)
+log=JSON.parse(log)
+
+let user_name=users_1.map((value)=>
+{ 
+  return value.fullName
+})
+let user=document.querySelector(".user_name")
+console.log(user_name)
+user.innerHTML="Welcome,"+user_name
+
   logout.addEventListener("click", () => {
     Swal.fire({
       title: "Are you sure?",

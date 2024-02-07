@@ -19,5 +19,18 @@ let about = document.querySelector(".about");
 let btn = document.querySelector(".button");
 
   btn.addEventListener("click", () => {
-    window.location.replace("../write/write.html");
+    window.location.replace("../write_blog/write.html");
   });
+      //user name in heading
+let users_1=localStorage.getItem("users")
+let log=localStorage.getItem("login")
+users_1=JSON.parse(users_1)
+log=JSON.parse(log)
+
+let user_name=users_1.map((value)=>
+{ 
+  return value.fullName
+})
+let user=document.querySelector(".user_name")
+console.log(user_name)
+user.innerHTML="Welcome,"+user_name

@@ -1,15 +1,23 @@
+//gets the current login index
 let active = localStorage.getItem("login");
-
 active = JSON.parse(active);
 
 
 if (active !== null) 
 {
-  let btn = document.querySelector(".button");
+  //user name in heading
+let users_1=localStorage.getItem("users")
+let log=localStorage.getItem("login")
+users_1=JSON.parse(users_1)
+log=JSON.parse(log)
 
-  btn.addEventListener("click", () => {
-    window.location.replace("../write_blog/write.html");
-  });
+let user_name=users_1.map((value)=>
+{ 
+  return value.fullName
+})
+let user=document.querySelector(".user_name")
+console.log(user_name)
+user.innerHTML="Welcome,"+user_name
 
   let users = localStorage.getItem("users");
   let blogs = localStorage.getItem("blogs");
@@ -30,6 +38,7 @@ if (active !== null)
 
   let author_2 = author_1[index];
 
+  
   if(blogs!==null)
   {
     let list = blogs.map((value) => 
@@ -70,11 +79,13 @@ if (active !== null)
     
    buttonId = this.getAttribute('id');
    
+  //  replace blogs data with new one
    let arrayOfObjects = JSON.parse(localStorage.getItem('blogs'));
    arrayOfObjects = arrayOfObjects.filter(obj => Number(obj.u_id) !== Number(buttonId));
-
    localStorage.setItem('blogs', JSON.stringify(arrayOfObjects));
-     
+   
+   
+  //display the new blog
    blogs= localStorage.getItem("blogs");
    blogs= JSON.parse(blogs);
    let list_2= blogs.map((value) => 
@@ -111,28 +122,38 @@ if (active !== null)
 })     
 
 
-
+//myfeed
   let feed = document.querySelector(".feed");
   feed.addEventListener("click", () => {
     window.location.replace("../my_feed/my_feed.html");
   });
 
-
+//contact page
   let contact=document.querySelector(".contact")  
   contact.addEventListener("click",()=>
   {
     window.location.replace("../contact_us/contactus.html")
   })
 
-
+//about us page
   let myblog=document.querySelector(".about")
 myblog.addEventListener("click",()=>
 {
   window.location.replace("../about_us/aboutus.html")
 })
 
+//write page
+let btn = document.querySelector(".button");
+
+btn.addEventListener("click", () => {
+  window.location.replace("../write_blog/write.html");
+});
+
 }
+
 }
+
+//not login-
 else 
 {
   window.location.replace("../index.html");

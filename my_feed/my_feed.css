@@ -143,11 +143,11 @@ li {
   margin: 10px 40px;
   color: white;
   font-size: 1.4rem;
-  transition-property: color, scale, border-bottom;
+ transition-property: color, scale, border-bottom;
   transition-duration: 0.5s;
   font-weight: 550;
   border-radius: 5px;
-  padding: 0 10px;
+  padding: 0 10px; 
 }
 
 li:hover {
@@ -180,4 +180,13 @@ li:hover {
   border-bottom: 3px solid white;
   scale: 1.2;
   cursor: pointer;
+}
+.user_name
+{
+    color: white;
+    font-size: 1rem;
+    transition-property: color,scale,border-bottom;
+    transition-duration: 0.5s;
+    font-weight: 550;
+    border-radius: 5px;
 }
