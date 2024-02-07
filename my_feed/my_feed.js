@@ -56,5 +56,5 @@ let myblog=document.querySelector(".my-blog")
 }
 else
 {
-  window.location.replace("../login/login.html");
+  window.location.replace("../login.html");
 }
