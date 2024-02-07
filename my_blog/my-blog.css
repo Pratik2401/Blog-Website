@@ -17,7 +17,7 @@
   
   body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(./loginbg1.jpg);
+    background-image: url("../login_reg/loginbg1.jpg");
     background-size: cover;
   }
   
