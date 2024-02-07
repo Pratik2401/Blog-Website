@@ -65,5 +65,5 @@ myblog.addEventListener("click",()=>
 })
 
 } else {
-  window.location.replace("../login/login.html");
+  window.location.replace("../login.html");
 }
