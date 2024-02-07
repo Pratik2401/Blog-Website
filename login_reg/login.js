@@ -142,7 +142,7 @@ signIn.addEventListener("click", () => {
     }).then((result) => {
       if (result.isConfirmed) {
         localStorage.setItem("login", isUserExist);
-        window.location.replace("../write_blog/write.html");
+        window.location.replace("./write_blog/write.html");
       }
     });
   }
