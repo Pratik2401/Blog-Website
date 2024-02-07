@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+  }
+  
+  .main_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    align-items: center;
+    box-shadow: 0 .1rem 2px 0 grey ;
+    background-color: dodgerblue;
+    position: sticky;
+    border-radius: 0 0 30px 30px;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(./loginbg1.jpg);
+    background-size: cover;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    margin-top: 3px;
+    margin-left: 80px;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    padding-left: 25px;
+    font-size: 1.5rem;
+    transition-property: text-shadow;
+    transition-duration: 1s;
+  }
+  a:hover {
+    text-shadow: 0px 0px 10px white;
+  }
+  
+  .brand {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .blog {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem auto;
+    padding: 2rem;
+    box-shadow: 0 0.1rem 2px 0 grey;
+    border-radius: 20px;
+    border: none;
+    align-items: center;
+  }
+  
+  .image {
+    width: 20rem;
+    box-shadow: 0 0.1rem 2px 0 grey;
+  }
+  
+  .title {
+    font-weight: bold;
+  }
+  .main-form div {
+    margin: 1rem 0;
+    width: 25vw;
+    display: flex;
+  }
+  
+  .main-form div .input {
+    width: 100%;
+    padding: 0.5rem 1.5rem;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background-color: rgb(211, 207, 207);
+    resize: none;
+  }
+
+  
+  .img-preview {
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 2rem;
+    box-shadow: 0 0 10px 2px grey;
+    border-radius: 20px;
+    border: none;
+    align-items: center;
+    padding: 1rem;
+    scale: 0.7;
+    transition-duration: 1s;
+    transition-property: scale;
+  }
+  .img-preview:hover {
+    scale: 1.2;
+  }
+  .image {
+    width: 300px;
+    border-radius: 20px;
+  }
+  
+  .blog-area {
+    padding: 1rem;
+  }
+  
+  .title {
+    margin-bottom: 2rem;
+  }
+  
+  .des {
+    margin-bottom: 1rem;
+  }
+  
+  .author {
+    text-align: end;
+  }
+  
+  li {
+    margin: 10px 40px;
+    color: white;
+    font-size: 1.4rem;
+    transition-property: color, scale, border-bottom;
+    transition-duration: 0.5s;
+    font-weight: 550;
+    border-radius: 5px;
+    padding: 0 10px;
+  }
+  
+  li:hover {
+    border-bottom: 3px solid white;
+    scale: 1.2;
+    cursor: pointer;
+  }
+  
+  
+  .my-blog{
+    border: none;
+    border-bottom: 3px solid white;
+    color: white;
+  }
+  
+  .button {
+    border: none;
+    margin: 5px 80px;
+    color: white;
+    font-size: 1.4rem;
+    transition-property: color, scale, border-bottom;
+    transition-duration: 0.5s;
+    font-weight: 550;
+    border-radius: 5px;
+    padding: 0 10px;
+    background-color: transparent;
+  }
+  
+  .button:hover {
+    border-bottom: 3px solid white;
+    scale: 1.2;
+    cursor: pointer;
+  }
+  
+  .del
+  {
+    
+    margin-top: 5px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    margin-left: 3px;
+    scale: 1.2;
+    border: none;
+  }
+
+  .del:hover
+  { 
+    scale: 1.4;
+    box-shadow: 0 0 5px 2px red;
+  }

@@ -1,0 +1,252 @@
+*
+{
+  user-select: none;
+}
+
+body
+{
+    background-image: url(./loginbg1.jpg);
+    background-size: 100%;
+}
+
+.flip-container {
+  perspective: 1000px;
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+
+.flip-container.clicked .flipper {
+  transform: rotateY(180deg);
+}
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.main_body {
+  position: fixed;
+  top: 160px;
+  left: 600px;
+}
+
+.login,
+.reg {
+border-radius: 20px;
+  background-color: transparent;
+  width: 350px;
+  height: 450px;
+  box-shadow: 0px 0px 5px 10px #3498db; 
+  opacity: 0.5;
+  transition-property: transform, opacity, box-shadow;
+  transition-duration: 1s;
+}
+
+.login-id
+{
+    margin-top: 20px;
+}
+.login:hover,.reg:hover
+{
+    background: linear-gradient(white,rgb(116, 186, 255));
+    box-shadow: 2px 3px 20px 2px #5dade2; /* Lighter blue hover box-shadow color */
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+
+input {
+    border-radius: 10px;
+    border: none;
+    color: black;
+    outline: none;
+    padding: 5px;
+    margin: 5px;
+    width: 70%;
+    font-size: 1.5rem;
+    transition-property: width;
+    transition-duration: 1s;
+    border-bottom: 2px solid dodgerblue; 
+}
+
+input:focus {
+    width: 80%;
+}
+/* a {
+    color: dodgerblue;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    scale: 1;
+    transition-property: scale,color;
+    transition-duration: 1s;
+}
+
+a:hover
+{
+    scale: 1.3;
+} */
+.btn{
+
+    background-color:rgb(83, 169, 255);
+    color:white; 
+    font-variant: small-caps;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px;
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 20px;
+    width: 110px;
+    height: 40px;
+    border-radius: 10px;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+.btn:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
+.btn:active {
+    background-color: #2c3e50; /* Darker blue active button color */
+    transform: scale(1.1);
+}
+
+.group
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+i {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(7, 131, 255);
+    font-size: 1.25rem;
+}
+
+#n_1
+{
+    margin-top:60px;
+}
+
+.login-id
+{
+    margin-top:60px;
+}
+
+.submit {
+  padding: 7px;
+  margin: 20px;
+  margin-left: 100px;
+  border: none;
+  background: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 1px dodgerblue;
+  font-size: 25px;
+  cursor: pointer;
+  transition-property: background, box-shadow, transform;
+  transition-duration: 1s;
+  color: white;
+}
+
+.submit:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px 5px rgb(103, 179, 255);
+  background: linear-gradient(90deg rgb(141, 198, 255),white);
+}
+
+.btn{
+  margin-top: 40px;
+  position: relative;
+  right: 20px;
+}
+
+.create
+{
+  transition-property: color,scale;
+  transition-duration: 1s;
+  margin-top: 30px;
+  position: relative;
+  right: 20px;
+  color: dodgerblue;
+    font-size: 1rem;
+    text-decoration: none;
+    scale: 1;
+    
+}
+
+.create:hover
+{
+  scale: 1.2;
+  color: white;
+}
+
+.already
+{
+  
+  transition-property: color,scale;
+  transition-duration: 1s;
+  margin-top: 30px;
+  position: relative;
+  left: 40px;
+  color: dodgerblue;
+    font-size: 1rem;
+    text-decoration: none;
+    scale: 1;
+}
+
+.already:hover
+{
+  scale: 1.2;
+  color: white;
+}
+
+.submit
+{
+  position: relative;
+  left: 20px;
+}
+
+#l_head
+{
+  
+  
+  position: relative;
+  top: 40px;
+  
+  font-size: 4rem;
+  color: dodgerblue;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+#r_head
+{
+  
+  position: relative;
+  top: 40px;
+  left: 20px;
+  font-size: 4rem;
+  color: dodgerblue;
+  font-variant: small-caps;
+  font-weight: bold;
+}
