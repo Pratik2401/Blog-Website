@@ -35,11 +35,10 @@ if (active !== null) {
           text: "Your file has been deleted.",
           icon: "success",
         });
-        window.location.replace("./login/login.html");
+        window.location.replace("../index.html");
       }
     });
   });
-
   let index = localStorage.getItem("login");
   index = JSON.parse(index);
   let author_1 = users.map((value) => {
@@ -47,11 +46,14 @@ if (active !== null) {
   });
   let author = author_1[index];
   save.addEventListener("click", () => {
+    
+  let unique_id=Date.now()
     let newBlog = {
       title: title.value,
       description: description.value,
       url: url.value,
       author: author,
+      u_id:unique_id
     };
     let blogs = localStorage.getItem("blogs");
     blogs = blogs === null ? [] : JSON.parse(blogs);
@@ -80,5 +82,5 @@ if (active !== null) {
     window.location.replace("../my_blog/my-blog.html")
   })
 } else {
-  window.location.replace("../login/login.html");
+  window.location.replace("../index.html");
 }
