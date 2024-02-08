@@ -1,7 +1,7 @@
 let btn = document.querySelector("#my-feed");
 
 btn.addEventListener("click", () => {
-  window.location.replace("/my_feed/my_feed.html");
+  window.location.replace("./my_feed/my_feed.html");
 });
 
 let userDetails = null;
