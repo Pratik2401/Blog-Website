@@ -24,8 +24,7 @@
   .menu {
     list-style: none;
     display: flex;
-    margin-top: 3px;
-    margin-left: 80px;
+    
   }
   
   a {
